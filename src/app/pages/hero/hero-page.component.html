@@ -1,0 +1,21 @@
+<h1>{{ nameSignal() }}</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd>{{ nameSignal() }}</dd>
+
+  <td>Edad:</td>
+  <dd>{{ ageSignal() }}</dd>
+
+  <td>Método:</td>
+  <dd>{{heroDescription()}}</dd>
+
+  <td>Capitalizado:</td>
+  <!-- Mostrar nombre todo en mayúsculas -->
+  <dd>{{capitalizedName() }}</dd>
+
+  <button (click)="changeHero()">Cambiar Nombre</button>
+  <button (click)="changeAgeTo(60)">Cambiar Edad</button>
+  <button (click)="resetForm()">Reset</button>
+
+</dl>
